@@ -1,3 +1,5 @@
+                                
+
 jQuery(function ($) { "use strict";
 	
 	/* ========================================================================= */
@@ -230,9 +232,9 @@ jQuery(function ($) { "use strict";
 			lineWidth: 15,
 			animate: 2e3,
 			onStep: function (e, t, n) {
-				$(this.el).find(".percent").text(Math.round(n));
+				$(this.el).find(".percent").text(Math.round(n))
 			}
-		});
+		})
 	});
 	
 	
@@ -309,21 +311,21 @@ jQuery(function ($) { "use strict";
 		if (email.length == 0 || email.indexOf('@') == '-1') {
 			var error = true;
 			$('#email').css("border-color", "#3BF1FF");
-			$('#no-input').html('<p>* No input detected.</p>');
+			$('#no-input').html('<p>* No input detected.</p>')
 		} else {
 			$('#email').css("border-color", "#666");
 		}
 		if (subject.length == 0) {
 			var error = true;
 			$('#subject').css("border-color", "#3BF1FF");
-			$('#no-input').html('<p>* No input detected.</p>');
+			$('#no-input').html('<p>* No input detected.</p>')
 		} else {
 			$('#subject').css("border-color", "#666");
 		}
 		if (message.length == 0) {
 			var error = true;
 			$('#message').css("border-color", "#3BF1FF");
-			$('#no-input').html('<p>* No input detected.</p>');
+			$('#no-input').html('<p>* No input detected.</p>')
 		} else {
 			$('#message').css("border-color", "#666");
 		}
@@ -447,7 +449,7 @@ jQuery(function ($) { "use strict";
 		}];
 
 		var mapOptions = {
-			zoom: 13,
+			zoom: 10,
 			center: myLatLng,
 			disableDefaultUI: true,
 			scrollwheel: true,
@@ -577,5 +579,6 @@ function parallaxInit() {
 }
 
 $(window).bind("load", function () {
-    parallaxInit();
+    parallaxInit()
 });
+                            
