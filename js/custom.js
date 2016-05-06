@@ -449,7 +449,7 @@ jQuery(function ($) { "use strict";
 		}];
 
 		var mapOptions = {
-			zoom: 18,
+			zoom: 13,
 			center: myLatLng,
 			disableDefaultUI: true,
 			scrollwheel: true,
